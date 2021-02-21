@@ -13,6 +13,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// my routes
+
 Route::get('/', function () {
     return view('index');
 })->name('/');
