@@ -1,4 +1,5 @@
 // Auto writing text
+// added script
 const descr = document.querySelector('#promo-descr');
 const text = `Привет,  Я Рахат. <br> Frontend Разработчик.`;
 
