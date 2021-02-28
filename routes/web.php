@@ -3,7 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\DB;
 
-use App\Models\Client;
+use App\Models\Post;
 
 /*
 |--------------------------------------------------------------------------
@@ -38,3 +38,13 @@ Route::get('/services', function () {
     return view('services');
 })->name('services');
 
+Route::get('post/create', function () {
+   DB::table('post')->insert([
+       'title' => 'Test',
+       'body' => 'Some body text...'
+   ]);
+});
+
+Route::get('/post', function() {
+    return Post::find(1);
+});
