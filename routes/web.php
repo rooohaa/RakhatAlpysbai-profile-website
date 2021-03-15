@@ -39,11 +39,9 @@ Route::get('/services', function () {
     return view('services');
 })->name('services');
 
-Route::get('post/create', function () {
-   DB::table('post')->insert([
-       'title' => 'Test',
-       'body' => 'Some body text...'
-   ]);
+Route::get('/post', [BlogController::class, 'index']);
+Route::get('post/create', function() {
+    return view('blog.create');
 });
 
-Route::get('/post', [BlogController::class, 'index']);
+Route::post('post/create', [BlogController::class, 'store'])->name('add-post');
