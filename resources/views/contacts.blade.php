@@ -93,18 +93,23 @@
                 <input type="text" name="name" required />
               </div>
 
+                <div class="form__block">
+                    <label for="surname">Фамилия</label>
+                    <input type="text" name="surname" required />
+                </div>
+
               <div class="form__block">
                 <label for="email">Почта</label>
                 <input type="email" name="email" required />
               </div>
             </div>
 
-            <div class="form__textarea">
-              <label for="message">Чем я могу тебе помочь?</label>
-              <textarea name="message" required></textarea>
+            <div class="form__block">
+              <label for="message">Ваша фотка</label>
+                <input type="file">
             </div>
 
-            <button id="send-btn">Отправить</button>
+            <button type="submit" id="send-btn">Отправить</button>
           </form>
         </div>
       </div>
