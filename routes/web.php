@@ -56,3 +56,5 @@ Route::get('users/create', function() {
 });
 
 Route::post('users/create', [UserController::class, 'store'])->name('add-user');
+
+Route::get('/send-email', [\App\Http\Controllers\MailController::class, 'sendEmail']);
