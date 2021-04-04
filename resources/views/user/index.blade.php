@@ -8,6 +8,24 @@
     <title>Users</title>
 </head>
 <body>
-
+    @foreach ($users as $user)
+    <ul style="display: flex; flex-direction: column; justify-content: space-between; background-color: aliceblue;">
+        <li>
+            {{ $user->id }}
+        </li>
+        <li>
+            {{ $user->name }}
+        </li>
+        <li>
+            {{ $user->surname }}
+        </li>
+        <li>
+            {{ $user->email }}
+        </li>
+        <li>
+            <img src="{{ asset('storage/images/' . $user->photo) }}" style="width: 60px; height: 60px;" alt="img"/>
+        </li>
+    </ul>
+    @endforeach
 </body>
 </html>
