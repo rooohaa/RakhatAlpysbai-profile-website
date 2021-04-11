@@ -34,19 +34,19 @@
           <nav class="header__nav">
             <ul class="header__list">
               <li class="header__item">
-                <a href="{{ route('about') }}" class="header__link">Обо мне</a>
+                <a href="{{ route('about') }}" class="header__link">{{__('index.about')}}</a>
               </li>
 
               <li class="header__item">
-                <a href="{{ route('services') }}" class="header__link">Усулуги</a>
+                <a href="{{ route('services') }}" class="header__link">{{__('index.services')}}</a>
               </li>
 
               <li class="header__item">
-                <a href="{{ route('projects') }}" class="header__link">Мои проекты</a>
+                <a href="{{ route('projects') }}" class="header__link">{{__('index.projects')}}</a>
               </li>
 
               <li class="header__item">
-                <a href="{{ route('contacts') }}" class="header__link">Контакты</a>
+                <a href="{{ route('contacts') }}" class="header__link">{{__('index.contacts')}}</a>
               </li>
             </ul>
           </nav>
@@ -66,12 +66,10 @@
             <h2 id="promo-descr"></h2>
 
             <p>
-              Я из города Нур-Султан. <br />
-              Создаю & поддерживаю веб-сайты и SPA приложения с помощью
-              JavaScript.
+                {{__('index.descr')}}
             </p>
 
-            <a href="#my_projects" class="btn">Мои проекты</a>
+            <a href="#my_projects" class="btn">{{__('index.btn-proj')}}</a>
           </div>
 
           <div class="promo__img">

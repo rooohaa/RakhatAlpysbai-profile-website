@@ -21,7 +21,8 @@ use App\Http\Controllers\BlogController;
 
 // my routes
 
-Route::get('/', function () {
+Route::get('/{lang?}', function ($lang) {
+    App::setLocale($lang);
     return view('index');
 })->name('/');
 
