@@ -1,26 +1,3 @@
-// Auto writing text
-// added script
-const descr = document.querySelector('#promo-descr');
-const text = `Привет,  Я Рахат. <br> Frontend Разработчик.`;
-
-window.addEventListener('load', () => {
-    setInterval( () => {
-        writeText(text)
-    }, 85);
-});
-
-let index = 0;
-
-function writeText(text) {
-    descr.innerHTML = text.slice(0, index);
-
-    index++;
-
-    if (index > text.length) {
-        return;
-    }
-}
-
 // Progress bar
 const $bars = document.querySelectorAll('.bar');
 let onlyOnce = true

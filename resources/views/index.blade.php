@@ -48,6 +48,18 @@
               <li class="header__item">
                 <a href="{{ route('contacts') }}" class="header__link">{{__('index.contacts')}}</a>
               </li>
+
+                <li class="header__item">
+                    <a href="ru" class="header__link">RU</a>
+                </li>
+
+                <li class="header__item">
+                    <a href="en" class="header__link">EN</a>
+                </li>
+
+                <li class="header__item">
+                    <a href="kz" class="header__link">KZ</a>
+                </li>
             </ul>
           </nav>
 
@@ -63,7 +75,7 @@
       <section class="promo">
         <div class="container">
           <div class="promo__descr">
-            <h2 id="promo-descr"></h2>
+            <h2 id="promo-descr">{{__('index.promo')}}</h2>
 
             <p>
                 {{__('index.descr')}}

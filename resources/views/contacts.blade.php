@@ -61,7 +61,7 @@
       <section class="promo">
         <div class="container">
           <div class="promo__descr">
-            <h2 id="promo-descr"></h2>
+            <h2 id="promo-descr">Привет, Я Рахат. Frontend Разработчик.</h2>
 
             <p>
               Я из города Нур-Султан. <br />
@@ -103,12 +103,10 @@
                 <input type="email" name="email" required />
               </div>
             </div>
-
-            <div class="form__block">
-              <label for="message">Ваша фотка</label>
-                <input type="file">
-            </div>
-
+              <div class="form__block">
+                  <label for="message">Ваше сообщение</label>
+                  <textarea type="message" name="message" required></textarea>
+              </div>
             <button type="submit" id="send-btn">Отправить</button>
           </form>
         </div>

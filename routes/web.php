@@ -21,8 +21,7 @@ use App\Http\Controllers\BlogController;
 
 // my routes
 
-Route::get('/{lang?}', function ($lang) {
-    App::setLocale($lang);
+Route::get('/', function () {
     return view('index');
 })->name('/');
 
@@ -42,6 +41,7 @@ Route::get('/services', function () {
     return view('services');
 })->name('services');
 
+Route::get('/send-email', [\App\Http\Controllers\MailController::class, 'sendEmail']);
 
 Route::get('/post', [BlogController::class, 'index']);
 Route::get('post/create', function() {
@@ -58,4 +58,8 @@ Route::get('users/create', function() {
 
 Route::post('users/create', [UserController::class, 'store'])->name('add-user');
 
-Route::get('/send-email', [\App\Http\Controllers\MailController::class, 'sendEmail']);
+Route::get('/{lang?}', function ($lang) {
+    App::setLocale($lang);
+    return view('index');
+})->name('/');
+

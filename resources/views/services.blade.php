@@ -63,7 +63,7 @@
       <section class="promo">
         <div class="container">
           <div class="promo__descr">
-            <h2 id="promo-descr"></h2>
+            <h2 id="promo-descr">Привет, Я Рахат. Frontend Разработчик.</h2>
 
             <p>
               Я из города Нур-Султан. <br />

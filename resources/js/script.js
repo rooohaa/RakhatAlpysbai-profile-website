@@ -1,25 +1,3 @@
-// Auto writing text
-const descr = document.querySelector('#promo-descr');
-const text = `Привет,  Я Рахат. <br> Frontend Разработчик.`; 
-
-window.addEventListener('load', () => {
-   setInterval( () => {
-      writeText(text)
-   }, 85);
-});
-
-let index = 0;
-
-function writeText(text) {
-   descr.innerHTML = text.slice(0, index);
-
-   index++;
-
-   if (index > text.length) {
-      return;
-   }
-}
-
 // Progress bar
 const $bars = document.querySelectorAll('.bar');
 let onlyOnce = true
@@ -29,7 +7,7 @@ window.addEventListener('scroll', onScroll)
 // listen for scroll event
 function onScroll() {
    let scrollPosition = window.scrollY
-   
+
    if (scrollPosition > 800 && onlyOnce) {
       startFilling()
       onlyOnce = false
@@ -52,8 +30,8 @@ function fillBar($bar, $percent) {
          percent++
          $bar.style.width = `${percent}%`
       }
-   }, 18); 
-   
+   }, 18);
+
    setTimeout(() => {
       clearInterval(interval)
    }, 2500)
@@ -94,7 +72,7 @@ const spans = document.querySelectorAll('.h-menu span')
 
 
 menu.addEventListener('click', () => {
-   
+
    if (isOpen) {
       menu.classList.remove('open')
       nav.style.display = 'none'
@@ -114,7 +92,7 @@ menu.addEventListener('click', () => {
 
 window.addEventListener('scroll', () => {
    let pos = window.scrollY
-   
+
    if (isOpen && pos > 60) {
       menu.classList.remove('open')
       nav.style.display = 'none'
