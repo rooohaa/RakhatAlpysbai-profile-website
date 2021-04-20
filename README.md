@@ -28,8 +28,8 @@ Below you can see some screenshots from website.
 
 #### Users table from Database.
 
-## Users |
-
+| Users 
+------
 id |
 name |
 surname |
