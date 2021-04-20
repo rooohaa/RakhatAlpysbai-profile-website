@@ -28,14 +28,14 @@ Below you can see some screenshots from website.
 
 #### Users table from Database.
 
-| Users 
-------
-id |
-name |
-surname |
-email |
-photo |
-created_at |
+| Users
+| ------
+| id |
+| name |
+| surname |
+| email |
+| photo |
+| created_at |
 
 ---
 
